@@ -23,3 +23,15 @@ Notre approche est basée sur le développement des relations empiriques entre l
 1) avancer dans la meilleure compréhension de la couplage terre solide-atmosphère-ionosphère et répondre aux questions fondamentales de ce domaine de recherche;
 2) développer des méthodes de distinction des perturbations ionosphériques d’origine sismiques/tsunamique d’autres perturbations;
 3) développer des méthodologies compatibles avec le TQR, qui doivent être rapides et précises.
+
+
+Portuguese-version:
+
+O projeto IONO-DIET tem como objetivo desenvolver, pela primeira vez, métodos baseados na ionosfera que detectarão terremotos e tsunamis em tempo quase real (NRT) e determinarão os parâmetros da fonte do terremoto e/ou as alturas das ondas do tsunami a partir da ionosfera em NRT. Esse último será feito com base na detecção de distúrbios ionosféricos co-sísmicos e co-tsunâmicos por receptores GNSS. A ambição do IONO-DIET é contribuir para o aprimoramento dos sistemas de alerta existentes, fornecendo rapidamente as informações que faltam sobre a fonte sísmica e a gênese do tsunami de um terremoto, ou as estimativas das alturas das ondas dos tsunamis que se propagam em mar aberto.
+
+A ideia de usar medições ionosféricas para alertas de tsunami não é nova. Entretanto, apesar de vários resultados sismo-ionosféricos promissores apresentados recentemente, o sistema ainda não existe. O IONO-DIET tem o objetivo de se tornar a última etapa antes que o sistema de avaliação de risco de tsunami/QE baseado na ionosfera se torne realidade.
+
+Nossa abordagem baseia-se no desenvolvimento de relações empíricas entre os parâmetros de terremotos e tsunamis e suas assinaturas ionosféricas. Para atingir plenamente essa meta principal, é necessário abordar os seguintes objetivos específicos: 
+1) avançar na compreensão do acoplamento entre a Terra sólida/oceano/atmosfera/ionosfera e responder às questões científicas fundamentais;
+2) distinguir os distúrbios causados por NH daqueles de outras origens. Para isso, trabalharemos e resolveremos o maior desafio das ciências ionosféricas modernas: a identificação e a diferenciação da fonte dos distúrbios ionosféricos viajantes (TIDs);
+3) desenvolver algumas metodologias novas que satisfaçam os requisitos da NRT por serem precisas e rápidas.
