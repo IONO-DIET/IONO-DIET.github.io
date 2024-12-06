@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IONO-DIET Project</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Helvetica' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Montserrat', 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: white;
+            color: #24292e;
+            padding: 30px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .inner-div {
+                    width: 33%;
+                    height: 33%;
+                    padding: 0;
+                    margin: 0;
+                    background-color: white;
+                }
+        main {
+            font-family: 'Montserrat', sans-serif;
+            padding: 20px;
+            max-width: 1800px;
+            font-size: 18px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #24292e;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        h3 {
+            text-align: center;
+            color: #333;
+        }
+        h4 {
+            text-align: center;
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            text-indent: 0%;
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #0366d6;
+            font-size: 18px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="inner-div">
+            <img src="https://anr.fr/typo3conf/ext/anr_skin/Resources/Public/assets/img/anr-logo-2021@2x.png" width="40%" height="40%" background-color="#FFFFFF" alt="ANR">
+        </div>
+        
+        <h1>IONO-DIET Project</h1>
+        
+        <div class="inner-div">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Logo_CNES_2017_triangulaire_bleu.png" width="20%" height="20%" background-color="#FFFFFF" alt="CNES">
+        <img src="https://fapesp.br/week2019/france/assets/img/logos-fapesp.png" width="40%" height="40%"  alt="FAPESP">
+        </div>
+    </header>
+    <style>
+        main {
+          text-indent: 5%;
+          text-align: justify;
+          text-justify: inter-word;
+        }
+    </style>
+    <main>
+        <h2>
+            About The Project
+        </h2>
+        <h3>
+        <a href="https://iono-diet.github.io/index.html"> Main Page </a> |
+        <a href="https://iono-diet.github.io/project.html">About The Project</a> |
+        <a href="https://iono-diet.github.io/demo.html">Demo</a>  |
+        <a href="https://iono-diet.github.io/news.html">News</a>  |
+        <a href="https://iono-diet.github.io/developments.html">Developments</a> |
+        <a href="https://iono-diet.github.io/team.html">Team</a> |
+        <a href="https://iono-diet.github.io/publications.html">List of Publications</a> |
+        </h3>
+        <h4>
+            Ionosphere
+        </h4>
+        <p>
+        The ionosphere is a part of the atmosphere that extends from 60-80 to 800-1000 km of altitude, where the concentration of charged particles (i.e., free electrons and ions) is enhanced. The total mass of the ionosphere is 10**12 – 10**13 times smaller than the mass of the neutral atmosphere. However, despite being “minor” in terms of particle concentration, the ionosphere is particularly important with regard to radio signal propagation and radio communications in general. </p>
+        <p>
+        In 1950, the ionosphere was formally defined by the Institute of Radio Engineers committee as "the part of the Earth's upper atmosphere where ions and electrons are present in quantities sufficient to affect the propagation of radio waves." The ionosphere and its state depend on solar activity, diurnal (the day/night) and seasonal conditions, latitude, altitude, the coupling with the geomagnetic field and with the neutral upper atmosphere (thermosphere). </p>
+        <p>
+        The ionosphere is primarily formed by solar radiation. Solar UV, X-ray and shorter wavelengths of solar radiation are ionising, as photons at these frequencies contain sufficient energy to dislodge electrons from a neutral gas atom/molecule upon absorption. The reverse process to ionisation is recombination, in which a free electron is "captured" by a positive ion. Recombination occurs spontaneously, and causes the emission of a photon carrying away the energy produced upon recombination. As gas density increases at lower altitudes, the recombination process prevails, since the gas molecules and ions are closer together. The balance between these two processes determines the quantity of ionisation of the atmosphere. </p>
+        <div id="figure_1">
+            <style type="text/css" scoped>
+                descrip {
+                    font-family: 'Helvetica', sans-serif;
+                    text-align: center;
+                    font-size: 15px;
+                }
+            </style>
+            <descrip>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Ionosphere-Thermosphere_Processes.jpg" align="center" width="50%" height="50%">
+                </br> <b> Figure 1. </b>  Complexity of upper atmosphere/ionosphere structures at Earth.
+            </descrip>
+        </div>
+        
+        <h4>
+            Seismo-Atmosphere–Ionosphere (SAI) coupling
+        </h4>
+        <p>
+        Impulsive forcing from the Earth's surface occurring due to earthquakes, explosions, volcanic eruptions, tsunamis, and so forth triggers atmospheric pressure waves. Depending on their frequencies, these atmospheric waves can be distinguished as acoustic and gravity waves (Figure 2). The acoustic waves are characterized by frequencies higher than the acoustic cutoff frequency (ωa), that is, higher than ~3.3 mHz. The acoustic waves are longitudinal waves in which particle moves in the direction of the wave propagation. The force restoring a displaced particle toward its original position is the change of pressure associated with the compression of the medium (Hargreaves, 1992). Therefore, acoustic waves traveling through a gas disturb the equilibrium state by compressions and rarefactions (Zel'dovich & Raizer, 2002). The acoustic waves propagate at the speed of sound that is equal to ~330 m/s at the surface and grows up to 800–1,000 m/s at the ionospheric altitude of 250–300 km. Therefore, it only takes ~8–9 min for the acoustic waves to reach the ionosphere.
+        </p>
+        <div id="figure_2">
+            <style type="text/css" scoped>
+                descrip {
+                    font-family: 'Helvetica', sans-serif;
+                    text-align: center;
+                    font-size: 15px;
+                }
+            </style>
+            <descrip>
+                <img src="https://agupubs.onlinelibrary.wiley.com/cms/asset/fdd8ee29-d203-478c-abd8-355f1f59349d/rog20216-fig-0001-m.jpg" align="center" width="50%" height="50%">
+                </br> <b> Figure 2. </b>  Frequency and period ranges for acoustic and gravity waves. The frequency ωa is commonly called “the acoustic cutoff frequency” indicating that acoustic waves with ω > ωa propagate through the atmosphere. The frequency ωb is the Brunt-Väissälä frequency (or buoyancy frequency). Waves with frequencies below the ωb are the gravity waves. In the lower atmosphere, the acoustic cutoff frequency is typically 3.3 mHz, and ωb is 2.9 mHz.
+            </descrip>
+        </div>
+        <p> The propagation and evolution of the acoustic and gravity waves in the atmosphere is greatly affected by the propagation medium and its properties. The exponential decrease of the atmospheric density with the altitude leads to the growth of both acoustic and gravity waves upon their upward propagation. The wave's amplitude is proportional to the atmospheric density; however, in accordance with the energy conservation law, the amplitude of the acoustic and gravity waves increases in order to maintain constant energy flux (Hines, 1960). The resulting amplification factor reaches 104 at ~150 km of altitude (lower atmosphere) and 105–106 at 350–400 km (upper atmosphere and ionosphere) (Blanc et al., 2010; Lognonné et al., 2006).
+        </p>
+        
+        
+        <h4>
+            GNSS for Ionospheric Sounding
+        </h4>
+        <p>
+        GNSS offer a powerful and accessible tool allowing the monitoring of the ionosphere. Due to the dispersive nature of the ionosphere, signals from dual-frequency GNSS receivers make it possible to measure the total electron content (TEC)—the electron density integrated along the raypath from a satellite to a receiver (Hofmann-Wellenhof et al., 2008)
+        </p>
+        <p>
+        Knowing the positions of GNSS satellites and those of ground-based GNSS-receivers, one can estimate the coordinates of TEC perturbations. Assuming that the ionosphere is a thin shell layer located at the altitude Hion (Figure 3), the intersection point between the Hion and line-of-sight (LOS) between a satellite and a receiver is called ionospheric piercing point (IPP). The IPP projection onto the Earth's surface is called a subionospheric point (SIP). These IPP and SIP allow tracking ionospheric TEC perturbations observed by the GNSS-method.
+        </p>
+        <div id="figure_3">
+            <style type="text/css" scoped>
+                descrip {
+                    font-family: 'Helvetica', sans-serif;
+                    text-align: center;
+                    font-size: 15px;
+                }
+            </style>
+            <descrip>
+                <img src="https://agupubs.onlinelibrary.wiley.com/cms/asset/b3ef72c4-96a8-4120-a36f-eb0a2894721d/rog20216-fig-0002-m.jpg" align="center" width="50%" height="50%">
+                </br> <b> Figure 3. </b>  GNSS sounding of the ionosphere. LOS = line-of-sight between a GNSS satellite and a GNSS receiver; IPP=Ionospheric Piercing Point, the intersection point between the LOS and the altitude of the ionosphere (Hion) within a thin shell approximation; SIP = the projection of the IPP on the Earth's surface. Knowing the coordinates of a satellite and a receiver one can calculate the coordinates of the SIP. Note that changing the altitude Hion will change the coordinates of the SIP.
+            </descrip>
+        </div>
+        <p> During earthquakes, vertical displacements of the ground or of the ocean floor induce perturbations in the atmosphere and ionosphere (Figure 4). The ionospheric perturbations, called coseismic ionospheric disturbances (CSID), are usually detected ~8–9 min after an earthquake. The Rayleigh surface waves generated by earthquakes propagate along the Earth's surface and induce acoustic waves that ~8–9 min later can be registered in the ionosphere, similarly to CSID generated by the coseismic crustal piston-like motion (Figure 4).
+        </p>
+        
+        <div id="figure_4">
+            <style type="text/css" scoped>
+                descrip {
+                    font-family: 'Helvetica', sans-serif;
+                    text-align: center;
+                    font-size: 15px;
+                    top:0;
+                    left:0;
+                    right:0;
+                    bottom:0;
+                }
+            </style>
+            <descrip>
+                <img src="https://agupubs.onlinelibrary.wiley.com/cms/asset/ce533891-7998-4081-9109-5d80bf2962d0/rog20216-fig-0004-m.jpg" align="center" width="50%" height="50%">
+                </br> <b> Figure 4. </b>  Scheme showing the dynamic coupling between coseismic crustal motion, Rayleigh surface waves, tsunami propagation, and the ionosphere. The acoustic waves (Ua) generated by an earthquake and by Rayleigh surface waves propagate upward and reach the ionosphere in ~8 min. Tsunamis generate gravity waves (Ug) that propagate obliquely and reach the ionosphere in ~45–60 min. Both acoustic and gravity waves are amplified with the altitude because of the exponential decrease of the atmospheric density with height.
+            </descrip>
+        </div>
+        <h4>
+            Our Project Goal
+        </h4>
+        
+        <p>
+        The Project IONO-DIET aims to develop, for the first time, ionosphere-based methods that will detect earthquakes and tsunamis in near-real-time (NRT), and will determine the earthquake source parameters and/or tsunami wave-heights from the ionosphere in NRT. The latter will be done based on detection of co-seismic and co-tsunamic ionospheric disturbances by GNSS receivers. The ambition of IONO-DIET is to contribute in the improvement of the existing warning systems by rapidly providing the missing piece of information about the seismic source and the tsunami-genesis of an earthquake, or the estimates of the wave heights of tsunamis propagating in open sea. </p>
+        <p>
+        The idea to use ionospheric measurements for tsunami warnings is not new. However, despite several promising seismo-ionospheric results presented recently, the system is not yet there. IONO-DIET aims to become the last step before the ionosphere-based EQ/tsunami risk assessment system becomes a reality. </p>
+        <p>
+        Our approach is based on development of empirical relationships between earthquake & tsunami parameters and their ionospheric signatures. To fully achieve this main goal, it is necessary to address the following specific objectives (Figure 5): </p>
+        <ol type="1">
+            <li>to advance in the understanding of the solid Earth/ocean/atmosphere/ionosphere coupling and to respond the fundamental scientific questions; </li>
+            <li>to distinguish NH-driven disturbances from those of other origins. For this purpose, we’ll work on and resolve the biggest challenge in the modern ionospheric sciences – the identification and differentiation of the source of travelling ionospheric disturbances (TIDs); </li>
+            <li>to develop a few novel methodologies that satisfy the NRT requirements by being precise and rapid. </li>
+        </ol>
+        <div id="figure_5">
+            <style type="text/css" scoped>
+                descrip {
+                    font-family: 'Helvetica', sans-serif;
+                    text-align: center;
+                    font-size: 15px;
+                    top:0;
+                    left:0;
+                    right:0;
+                    bottom:0;
+                }
+            </style>
+            <descrip>
+                <img src="https://github.com/IONO-DIET/IONO-DIET.github.io/blob/main/figures_extra/figure_main.png" align="center" width="70%" height="70%">
+                </br> <b> Figure 5. </b>  Scheme showing the framework of the project.
+            </descrip>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 IONO-DIET Team |
+            <a href="mailto:Elvira Astafyeva <astafyeva@ipgp.fr>" style="font-size: 12px" target="_blank"> Contact Us </a>
+        </p>
+    </footer>
+</body>
+</html>
