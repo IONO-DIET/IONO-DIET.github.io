@@ -58,6 +58,12 @@
   .section-head h2{font-size:2rem; line-height:1.25; max-width:600px;}
   .section-head .lede{margin-top:14px; color:var(--ink-soft); max-width:660px;}
 
+  /* ---------- Construction notice ---------- */
+  .notice{background:#FBF3DF; border-bottom:1px solid #EBD9A8; color:#5E4710; font-size:0.86rem;}
+  .notice__inner{max-width:1120px; margin:0 auto; padding:9px 32px; display:flex; align-items:center; gap:10px;}
+  .notice__dot{flex:none; width:8px; height:8px; border-radius:50%; background:var(--gold);}
+  .notice b{font-weight:600;}
+
   /* ---------- Masthead & nav ---------- */
   .flag-bar{
     height:4px;
@@ -336,6 +342,9 @@
 </head>
 <body>
 <div class="flag-bar" aria-hidden="true"></div>
+<div class="notice" role="status">
+  <div class="notice__inner"><span class="notice__dot" aria-hidden="true"></span><span><b>Website under construction.</b> Some sections and data are still being completed.</span></div>
+</div>
 
 <nav class="nav">
   <div class="nav__bar">
