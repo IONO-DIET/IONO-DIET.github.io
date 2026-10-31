@@ -285,6 +285,21 @@
   .mns4a-grid{display:grid; grid-template-columns:1.5fr 1fr; gap:64px; align-items:start;}
   .mns4a-grid p{font-size:1.02rem;}
   .mns4a .rcard__inst b{font-weight:500; color:var(--ink);}
+  .btn-site{
+    display:inline-flex; align-items:center; gap:12px; padding:8px 8px 8px 20px;
+    border-radius:999px; background:var(--navy); color:#fff; text-decoration:none;
+    font-family:var(--sans); font-weight:500; font-size:0.9rem; letter-spacing:0.01em;
+    border:1px solid var(--navy); box-shadow:0 1px 2px rgba(14,31,61,0.18);
+    transition:background .2s ease, box-shadow .2s ease, transform .2s ease;
+  }
+  .btn-site__icon{
+    width:30px; height:30px; border-radius:50%; background:var(--gold-light); color:var(--navy);
+    display:inline-flex; align-items:center; justify-content:center; transition:transform .2s ease;
+  }
+  .btn-site__icon svg{width:14px; height:14px;}
+  .btn-site:hover{background:var(--blue-deep); border-color:var(--blue-deep); box-shadow:0 4px 12px rgba(14,31,61,0.25); transform:translateY(-1px);}
+  .btn-site:hover .btn-site__icon{transform:translate(2px,-2px);}
+  .btn-site:focus-visible{outline:3px solid var(--blue-light); outline-offset:3px;}
   .mns4a .mode{font-family:var(--mono); font-size:0.74rem; color:var(--ink-soft);}
   .committee{font-size:0.92rem; color:var(--ink-soft); max-width:860px;}
   .committee b{color:var(--ink); font-weight:600;}
@@ -724,11 +739,11 @@
   <div class="container">
     <div class="mns4a-grid">
       <div>
-        <div class="section-head">
+        <div class="section-head" style="display:flex; align-items:center; gap:20px; flex-wrap:wrap;">
           <h2>MNS4A workshop</h2>
+          <a class="btn-site" href="https://mns4a.com/" target="_blank" rel="noopener">Workshop website<span class="btn-site__icon" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 10.5l7-7M4.5 3.5h6v6"/></svg></span></a>
         </div>
         <p><b>MNS4A — Modeling · Networks · Scientific Instrumentation for Aeronomy</b> was the international workshop organised by IONO-DIET on the implications of natural hazards for aeronomy. It took place on 19–21 October 2026 at INPE, São José dos Campos (Brazil), with one theme per day, invited and contributed talks, 13 posters, and a closing round table. Registration was free.</p>
-        <p style="margin-bottom:0;"><a href="https://mns4a.com/" target="_blank" rel="noopener" style="font-family:var(--mono); font-size:0.88rem; color:var(--blue-deep); border-bottom:1px solid var(--blue-light); text-decoration:none;">mns4a.com ↗</a></p>
       </div>
       <aside class="facts">
         <div class="fact"><div class="fact__value">19–21 Oct 2026</div><div class="fact__label">INPE, São José dos Campos</div></div>
@@ -736,19 +751,6 @@
       </aside>
     </div>
 
-    <div class="table-wrap" style="margin-top:36px;">
-      <table>
-        <thead>
-          <tr><th class="mono" style="width:90px;">Date</th><th>Session</th><th>Invited speakers</th></tr>
-        </thead>
-        <tbody>
-          <tr><td class="mono">19 Oct</td><td>Modeling of atmosphere and ionosphere variabilities</td><td>L. Rolland, C. A. Bortolozo, C. Denardini</td></tr>
-          <tr><td class="mono">20 Oct</td><td>Scientific networks for atmosphere and ionospheric applications</td><td>M. Ravanelli, M. G. Molina, E. Astafyeva</td></tr>
-          <tr><td class="mono">21 Oct</td><td>Scientific instrumentation and challenges</td><td>J. F. G. Monico, G. S. L. A. de França, B. Maletckii</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="note">Supported by FAPESP (2022/03502-6), ANR (AAPG2022), INPE and MCTI, with UnB, IPGP, NORSAR, ERAU and SBGEA as supporting institutions.</p>
   </div>
 </section>
 
