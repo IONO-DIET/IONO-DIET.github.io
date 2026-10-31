@@ -279,12 +279,7 @@
   @media (max-width:900px){ .rgrid{grid-template-columns:repeat(2,1fr);} }
   @media (max-width:520px){ .rgrid{grid-template-columns:1fr;} }
 
-  /* ---------- MNS4A ---------- */
-  .mns4a{background:var(--paper-raised); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
-  .mns4a .facts{background:var(--paper);}
-  .mns4a-grid{display:grid; grid-template-columns:1.5fr 1fr; gap:64px; align-items:start;}
-  .mns4a-grid p{font-size:1.02rem;}
-  .mns4a .rcard__inst b{font-weight:500; color:var(--ink);}
+  /* ---------- Workshop website button ---------- */
   .btn-site{
     display:inline-flex; align-items:center; gap:12px; padding:8px 8px 8px 20px;
     border-radius:999px; background:var(--navy); color:#fff; text-decoration:none;
@@ -297,13 +292,12 @@
     display:inline-flex; align-items:center; justify-content:center; transition:transform .2s ease;
   }
   .btn-site__icon svg{width:14px; height:14px;}
+  .btn-site--sm{gap:8px; padding:3px 3px 3px 12px; font-size:0.76rem; margin-left:10px; vertical-align:middle;}
+  .btn-site--sm .btn-site__icon{width:20px; height:20px;}
+  .btn-site--sm .btn-site__icon svg{width:10px; height:10px;}
   .btn-site:hover{background:var(--blue-deep); border-color:var(--blue-deep); box-shadow:0 4px 12px rgba(14,31,61,0.25); transform:translateY(-1px);}
   .btn-site:hover .btn-site__icon{transform:translate(2px,-2px);}
   .btn-site:focus-visible{outline:3px solid var(--blue-light); outline-offset:3px;}
-  .mns4a .mode{font-family:var(--mono); font-size:0.74rem; color:var(--ink-soft);}
-  .committee{font-size:0.92rem; color:var(--ink-soft); max-width:860px;}
-  .committee b{color:var(--ink); font-weight:600;}
-  @media (max-width:900px){ .mns4a-grid{grid-template-columns:1fr;} }
 
   /* ---------- Team ---------- */
   .team-intro{max-width:720px; color:var(--ink-soft); margin-top:14px;}
@@ -356,7 +350,6 @@
       <li><a href="#software">Software</a></li>
       <li><a href="#conferences">Conferences</a></li>
       <li><a href="#workshops">Workshops</a></li>
-      <li><a href="#mns4a">MNS4A</a></li>
       <li><a href="#team">Team</a></li>
       <li><a href="#funding">Funding</a></li>
     </ul>
@@ -710,7 +703,7 @@
         <h3>2.5 Workshops</h3>
         <span class="count">3 workshops · all held</span>
       </div>
-      <p class="lede">The project organised two GO-EUREKA workshops, in Paris and Rome, and hosted the MNS4A workshop at INPE on 19–21 October 2026 (see the dedicated section below).</p>
+      <p class="lede">The project organised two GO-EUREKA workshops, in Paris and Rome, and hosted the MNS4A workshop at INPE on 19–21 October 2026. MNS4A (Modeling · Networks · Scientific Instrumentation for Aeronomy) addressed the implications of natural hazards for aeronomy, with one theme per day, 9 invited talks, 13 posters and a closing round table each day; registration was free.</p>
       <div class="table-wrap">
         <table>
           <thead>
@@ -726,31 +719,11 @@
             <!-- FILL: dates and full workshop titles -->
             <tr><td class="mono">2025</td><td>GO-EUREKA workshop</td><td><span class="chip chip--fr"></span>IPGP</td><td>Paris, France</td><td><span class="status status--done">held</span></td></tr>
             <tr><td class="mono">2026</td><td>GO-EUREKA workshop</td><td><span class="chip chip--intl"></span>Sapienza University of Rome</td><td>Rome, Italy</td><td><span class="status status--done">held</span></td></tr>
-            <tr><td class="mono">2026</td><td><a href="#mns4a">MNS4A workshop</a></td><td><span class="chip chip--br"></span>INPE</td><td>São José dos Campos, Brazil</td><td><span class="status status--done">held</span></td></tr>
+            <tr><td class="mono">2026</td><td>MNS4A workshop<a class="btn-site btn-site--sm" href="https://mns4a.com/" target="_blank" rel="noopener">page<span class="btn-site__icon" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 10.5l7-7M4.5 3.5h6v6"/></svg></span></a></td><td><span class="chip chip--br"></span>INPE</td><td>São José dos Campos, Brazil</td><td><span class="status status--done">held</span></td></tr>
           </tbody>
         </table>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ============================================================ MNS4A -->
-<section class="mns4a" id="mns4a">
-  <div class="container">
-    <div class="mns4a-grid">
-      <div>
-        <div class="section-head" style="display:flex; align-items:center; gap:20px; flex-wrap:wrap;">
-          <h2>MNS4A workshop</h2>
-          <a class="btn-site" href="https://mns4a.com/" target="_blank" rel="noopener">Workshop website<span class="btn-site__icon" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 10.5l7-7M4.5 3.5h6v6"/></svg></span></a>
-        </div>
-        <p><b>MNS4A — Modeling · Networks · Scientific Instrumentation for Aeronomy</b> was the international workshop organised by IONO-DIET on the implications of natural hazards for aeronomy. It took place on 19–21 October 2026 at INPE, São José dos Campos (Brazil), with one theme per day, invited and contributed talks, 13 posters, and a closing round table. Registration was free.</p>
-      </div>
-      <aside class="facts">
-        <div class="fact"><div class="fact__value">19–21 Oct 2026</div><div class="fact__label">INPE, São José dos Campos</div></div>
-        <div class="fact"><div class="fact__value">9 invited talks</div><div class="fact__label">6 on-site, 3 online</div></div>
-      </aside>
-    </div>
-
   </div>
 </section>
 
