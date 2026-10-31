@@ -279,6 +279,17 @@
   @media (max-width:900px){ .rgrid{grid-template-columns:repeat(2,1fr);} }
   @media (max-width:520px){ .rgrid{grid-template-columns:1fr;} }
 
+  /* ---------- MNS4A ---------- */
+  .mns4a{background:var(--paper-raised); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .mns4a .facts{background:var(--paper);}
+  .mns4a-grid{display:grid; grid-template-columns:1.5fr 1fr; gap:64px; align-items:start;}
+  .mns4a-grid p{font-size:1.02rem;}
+  .mns4a .rcard__inst b{font-weight:500; color:var(--ink);}
+  .mns4a .mode{font-family:var(--mono); font-size:0.74rem; color:var(--ink-soft);}
+  .committee{font-size:0.92rem; color:var(--ink-soft); max-width:860px;}
+  .committee b{color:var(--ink); font-weight:600;}
+  @media (max-width:900px){ .mns4a-grid{grid-template-columns:1fr;} }
+
   /* ---------- Team ---------- */
   .team-intro{max-width:720px; color:var(--ink-soft); margin-top:14px;}
 
@@ -330,6 +341,7 @@
       <li><a href="#software">Software</a></li>
       <li><a href="#conferences">Conferences</a></li>
       <li><a href="#workshops">Workshops</a></li>
+      <li><a href="#mns4a">MNS4A</a></li>
       <li><a href="#team">Team</a></li>
       <li><a href="#funding">Funding</a></li>
     </ul>
@@ -454,7 +466,7 @@
       </div>
       <div>
         <div class="s-label">Workshops</div>
-        <div class="s-values"><span class="s-achieved">3</span><span class="s-target">2 held · 1 in Oct 2026</span></div>
+        <div class="s-values"><span class="s-achieved">3</span><span class="s-target">all held</span></div>
       </div>
     </div>
 
@@ -478,8 +490,6 @@
               <th>Person</th>
               <th>Role</th>
               <th>Institution</th>
-              <th>Funding</th>
-              <th>Topic / thesis title</th>
             </tr>
           </thead>
           <tbody>
@@ -489,83 +499,63 @@
               <td>Saúl A. Sanchez Juarez</td>
               <td><span class="tag tag--phd">PhD</span></td>
               <td>INPE</td>
-              <td class="mono">[funding] / Brazil</td>
-              <td>[thesis title]</td>
             </tr>
             <tr>
               <td class="mono">ongoing</td>
               <td>Ines Dahlia Ouar</td>
               <td><span class="tag tag--phd">PhD</span></td>
               <td>IPGP</td>
-              <td class="mono">ANR / France</td>
-              <td>[thesis title] — earthquake-induced surface deformation from ionospheric data</td>
             </tr>
             <tr>
               <td class="mono">2024 <span aria-hidden="true">✓</span></td>
               <td>Rogério H. Honda</td>
               <td><span class="tag tag--exc">Exchange</span></td>
               <td>INPE → IPGP</td>
-              <td class="mono">CAPES / Brazil</td>
-              <td>Eight-month doctoral exchange with the French team in Paris</td>
             </tr>
             <tr>
               <td class="mono">2023 <span aria-hidden="true">✓</span></td>
               <td>Boris Maletckii</td>
               <td><span class="tag tag--phd">PhD</span></td>
               <td>IPGP</td>
-              <td class="mono">External / France</td>
-              <td>[thesis title]</td>
             </tr>
             <tr>
               <td class="mono">ongoing</td>
               <td>Boris Maletckii</td>
               <td><span class="tag tag--post">Postdoc</span></td>
               <td>IPGP</td>
-              <td class="mono">ANR / France</td><!-- FILL: confirm funding source and start date -->
-              <td>Near-real-time identification and classification of ionospheric disturbances</td>
             </tr>
             <tr>
               <td class="mono">ongoing</td>
               <td>Rajesh Barad</td>
               <td><span class="tag tag--post">Postdoc</span></td>
               <td>IPGP</td>
-              <td class="mono">[funding] / France</td><!-- FILL: confirm funding source and start date -->
-              <td>[research topic]</td>
             </tr>
             <tr>
               <td class="mono">ongoing</td>
               <td>Saúl A. Sanchez</td>
               <td><span class="tag tag--post">Postdoc</span></td>
               <td>INPE</td>
-              <td class="mono">FAPESP / Brazil</td><!-- FILL: confirm funding source and start date -->
-              <td>Multi-instrument analysis and real-time prototype tests</td>
             </tr>
             <tr>
               <td class="mono">2025 <span aria-hidden="true">✓</span></td>
               <td>Rogério H. Honda</td>
               <td><span class="tag tag--phd">PhD</span></td>
               <td>INPE</td>
-              <td class="mono">[funding] / Brazil</td>
-              <td>[thesis title]</td>
             </tr>
             <tr>
               <td class="mono">ongoing</td>
               <td>Rogério H. Honda</td>
               <td><span class="tag tag--post">Postdoc</span></td>
               <td>INPE</td>
-              <td class="mono">[funding] / Brazil</td>
-              <td>[research topic]</td>
             </tr>
             <tr>
               <td class="mono">ongoing</td>
               <td>C. Maréchal</td>
               <td><span class="tag tag--phd">PhD</span></td>
               <td>IPGP</td>
-              <td class="mono">[funding] / France</td>
-              <td>[thesis title]</td>
             </tr>
             <tr class="pending-row">
-              <td colspan="6">Master's internships and any additional trainees or research visits — to be added</td>
+              <td colspan="4">Master's internships and any additional trainees or research visits — to be added</td>
             </tr>
           </tbody>
         </table>
@@ -703,9 +693,9 @@
     <div class="block" id="workshops">
       <div class="block__head">
         <h3>2.5 Workshops</h3>
-        <span class="count">3 workshops · 2 held, 1 upcoming</span>
+        <span class="count">3 workshops · all held</span>
       </div>
-      <p class="lede">The project organised two GO-EUREKA workshops, in Paris and Rome, and will host the MNS4A workshop at INPE in October 2026.</p>
+      <p class="lede">The project organised two GO-EUREKA workshops, in Paris and Rome, and hosted the MNS4A workshop at INPE on 19–21 October 2026 (see the dedicated section below).</p>
       <div class="table-wrap">
         <table>
           <thead>
@@ -721,11 +711,44 @@
             <!-- FILL: dates and full workshop titles -->
             <tr><td class="mono">2025</td><td>GO-EUREKA workshop</td><td><span class="chip chip--fr"></span>IPGP</td><td>Paris, France</td><td><span class="status status--done">held</span></td></tr>
             <tr><td class="mono">2026</td><td>GO-EUREKA workshop</td><td><span class="chip chip--intl"></span>Sapienza University of Rome</td><td>Rome, Italy</td><td><span class="status status--done">held</span></td></tr>
-            <tr><td class="mono">2026</td><td>MNS4A workshop</td><td><span class="chip chip--br"></span>INPE</td><td>São José dos Campos, Brazil</td><td><span class="status status--active">October 2026</span></td></tr>
+            <tr><td class="mono">2026</td><td><a href="#mns4a">MNS4A workshop</a></td><td><span class="chip chip--br"></span>INPE</td><td>São José dos Campos, Brazil</td><td><span class="status status--done">held</span></td></tr>
           </tbody>
         </table>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ============================================================ MNS4A -->
+<section class="mns4a" id="mns4a">
+  <div class="container">
+    <div class="mns4a-grid">
+      <div>
+        <div class="section-head">
+          <h2>MNS4A workshop</h2>
+        </div>
+        <p><b>MNS4A — Modeling · Networks · Scientific Instrumentation for Aeronomy</b> was the international workshop organised by IONO-DIET on the implications of natural hazards for aeronomy. It took place on 19–21 October 2026 at INPE, São José dos Campos (Brazil), with one theme per day, invited and contributed talks, 13 posters, and a closing round table. Registration was free.</p>
+        <p style="margin-bottom:0;"><a href="https://mns4a.com/" target="_blank" rel="noopener" style="font-family:var(--mono); font-size:0.88rem; color:var(--blue-deep); border-bottom:1px solid var(--blue-light); text-decoration:none;">mns4a.com ↗</a></p>
+      </div>
+      <aside class="facts">
+        <div class="fact"><div class="fact__value">19–21 Oct 2026</div><div class="fact__label">INPE, São José dos Campos</div></div>
+        <div class="fact"><div class="fact__value">9 invited talks</div><div class="fact__label">6 on-site, 3 online</div></div>
+      </aside>
+    </div>
+
+    <div class="table-wrap" style="margin-top:36px;">
+      <table>
+        <thead>
+          <tr><th class="mono" style="width:90px;">Date</th><th>Session</th><th>Invited speakers</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="mono">19 Oct</td><td>Modeling of atmosphere and ionosphere variabilities</td><td>L. Rolland, C. A. Bortolozo, C. Denardini</td></tr>
+          <tr><td class="mono">20 Oct</td><td>Scientific networks for atmosphere and ionospheric applications</td><td>M. Ravanelli, M. G. Molina, E. Astafyeva</td></tr>
+          <tr><td class="mono">21 Oct</td><td>Scientific instrumentation and challenges</td><td>J. F. G. Monico, G. S. L. A. de França, B. Maletckii</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Supported by FAPESP (2022/03502-6), ANR (AAPG2022), INPE and MCTI, with UnB, IPGP, NORSAR, ERAU and SBGEA as supporting institutions.</p>
   </div>
 </section>
 
